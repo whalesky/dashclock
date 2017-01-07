@@ -18,7 +18,7 @@
     <string name="settings">設定</string>
     <string name="more_options">追加のオプション</string>
 
-    <string name="simple_date_format">yyyy/MM/dd E</string>
+    <string name="simple_date_format">MM月dd日(E)</string>
 
     <!-- Configuration -->
     <string name="title_configure">DashClock 設定</string>
