@@ -65,7 +65,8 @@ clean {
 }
 
 task javadoc(type: Exec, overwrite: true, dependsOn: 'jar') {
-    commandLine './javadoc-scripts/generate_javadoc.sh'
+    //commandLine './javadoc-scripts/generate_javadoc.sh'
+    commandLine 'cmd', '/c', '.\\javadoc-scripts\\generate_javadoc.bat'
 }
 
 task javadocJar(type: Jar, dependsOn: javadoc) {
@@ -95,7 +96,7 @@ dependencies {
 // TODO: switch to http://www.gradle.org/docs/current/userguide/publishing_maven.html
 
 signing {
-    sign configurations.archives
+    //sign configurations.archives
 }
 
 uploadArchives {
